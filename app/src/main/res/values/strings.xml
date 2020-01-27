@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Municipalité Sayada</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_pass">Mot de passe</string>
+    <string name="hint_mail">Email</string>
+    <string name="ConnexionButton">S\'identifier</string>
+    <string name="FbConnextion">Se connecter avec Facebook</string>
+    <string name="anonymeConnexion">Anonyme</string>
+    <string name="inscription">S\'enregistrer</string>
+    <string name="hint_confirmPass">Confirmer le mot de passe</string>
+    <string name="inscriptionConfirm">Valider</string>
+    <string name="deconnexion">Êtes-vous sûr de vouloir se déconnecter ?</string>
+    <string name="manachir">مناشير</string>
+    <string-array name="reclamation_cate">
+        <item>Nettoyage</item>
+        <item>Eclairage</item>
+        <item>Etat de la route</item>
+        <item>Bâtiment désordonné</item>
+        <item>zone vertes</item>
+        <item>Irrégularités des boutiques ouvertes au public</item>
+        <item>Marché anarchique</item>
+
+    </string-array>
+    <string-array name="Sayada">
+        <item>rue de Port</item>
+        <item>Rue Ali Sliman</item>
+        <item>Rue palestine</item>
+        <item>Rue Monjie Slim</item>
+        <item>Rue Okba Ben-Nafaa</item>
+        <item>Rue Abdeljabbar Sayadi</item>
+        <item>Rue Khaled ibn El Walid</item>
+        <item>Rue de l\'Indépendance</item>
+        <item>نهج محمد المؤدب مهني</item>
+        <item>Rue Abdel Aziz Thaalbi</item>
+        <item>Rue Moftah Jguirim</item>
+        <item>Rue Riadh</item>
+        <item>نهج بغداد</item>
+        <item>Rue de la Liberté</item>
+        <item>Rue Bayache 2</item>
+        <item>Rue Assad Ebn El fourat</item>
+        <item>Rue Pasteur</item>
+        <item>نهج 2 مارس 1934</item>
+        <item>Rue 9 Avril 1938</item>
+        <item>Rue Cheikh Mansour</item>
+        <item>نهج وادي الصقلي</item>
+        <item>Avenue Habib Bourguiba</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="copyright1">© 2020 Baladiti All Rights Reserved.</string>
+    <string name="copyright2_1">Designed by</string>
+    <string name="copyright2_2">Souissi Ahmed</string>
+    <string name="pas_compte">Ne pas avoir un compte?</string>
+    <string name="ou_connectez_vous_avec">ou connectez-vous avec</string>
+    <string name="deja_compte">Vous avez déjà un compte?</string>
+    <string name="facebook_app_id">1847767825279225</string>
+    <string name="fb_login_protocol_scheme">fb1847767825279225</string>
+
+</resources>

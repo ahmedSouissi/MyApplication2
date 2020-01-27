@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InscriptionActivity">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/email_inscr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_mail"
+            android:inputType="text"
+            android:layout_margin="3dp"/>
+
+        <EditText
+            android:id="@+id/pass_inscr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_pass"
+            android:inputType="textPassword"
+            android:layout_margin="3dp"/>
+
+        <EditText
+            android:id="@+id/confirm_pass_inscr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_confirmPass"
+            android:inputType="textPassword"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/valider_inscr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inscriptionConfirm"
+            android:background="@drawable/login_button"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deja_compte"/>
+
+            <Button
+                android:id="@+id/login_button_insc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Se connecter"
+                android:background="@null"
+                android:textColor="#5B9FB6"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="2dp"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

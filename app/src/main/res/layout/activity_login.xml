@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/email_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_mail"
+                android:layout_margin="3dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/pass_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_pass"
+                android:inputType="textPassword"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp">
+
+
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textAllCaps="false"
+                    android:text="Mot de passe oublié ?"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#5B9FB6"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button"
+                android:text="@string/ConnexionButton"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:layout_marginBottom="3dp"/>
+            <Button
+                android:id="@+id/anonyme_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/anonymeConnexion"
+                android:background="@drawable/login_button"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:layout_marginBottom="3dp"/>
+
+        <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ou_connectez_vous_avec"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_fb_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+       <Button
+            android:id="@+id/fb_login"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_circle"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"/>-->
+
+        </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pas_compte"/>
+
+            <Button
+                android:id="@+id/inscription_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inscription"
+                android:background="@null"
+                android:textColor="#5B9FB6"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="2dp"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_baladiya"
+    tools:context=".Fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#bb000000"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Envoyer une Réclamation"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@null"/>
+        <Button
+            android:id="@+id/voir_reclamation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:text="Consultez réclamation"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="#FFFFFF"
+            android:text="مناشير" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

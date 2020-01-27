@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ReclamationFragment">
+
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <RadioButton
+                android:id="@+id/reclamation_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:checked="true"
+                android:text="Réclamation" />
+
+            <RadioButton
+                android:id="@+id/proposition_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proposition"
+                android:layout_marginStart="15dp"/>
+        </RadioGroup>
+
+            <AutoCompleteTextView
+                android:id="@+id/rue_auto_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radio_group"
+                android:hint="Rue"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_shape"/>
+
+        <Button
+            android:id="@+id/btn_categorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rue_auto_complete"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_shape"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:text="Choisissez la nature de reclamation/propsition"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/message_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_categorie"
+                android:layout_marginTop="20dp"
+                android:hint="Message"
+                android:lines="4"
+                android:maxLines="4"
+                android:inputType="textMultiLine"
+                android:background="@drawable/edit_shape"/>
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/message_edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/send_button"
+                android:text="Valider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button"
+                android:layout_margin="1dp"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:id="@+id/reset_button"
+                android:text="Annuler"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button"
+                android:layout_margin="1dp"
+                android:textColor="#FFFFFF"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
